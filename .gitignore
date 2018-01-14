@@ -104,4 +104,4 @@ ENV/
 db.sqlite3
 
 # migrations
-/migrations
+/app_forum/migrations/
