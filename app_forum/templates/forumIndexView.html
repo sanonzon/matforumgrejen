@@ -4,8 +4,14 @@
   </head>
     <body>
     <div>
-        {% if words %}
-            {{ words }}
+        {% if categoryList %}
+        <table>
+            {% for c in categoryList %}
+            <tr>
+                <td>{{ c.name }}</td><td> INSERT COOL CCSS</td>
+            </tr>
+            {% endfor %}
+        </table>
         {% else %}
         skiten kaninte laddas :(((())))
         {% endif %}
