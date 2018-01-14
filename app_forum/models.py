@@ -28,7 +28,9 @@ class Recipe:
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     description = models.CharField()
-    image = models.ImageField()
+    
+    # No damn hosting for images. Do imgur or whatever.
+    imageUrl = models.CharField()
     created = models.DateTimeField()
 
 
