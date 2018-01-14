@@ -6,7 +6,7 @@ import datetime
 
 def index(request):
     now = datetime.datetime.now()
-    html = "hej dootface, kl är %s " % now
+    html = "hej dootface, kl är %s \n\nif inloggad:\n\tvisa index\nelse:\n\tredirect login" % now
     return HttpResponse(html)
 
 def forumIndex(request):
