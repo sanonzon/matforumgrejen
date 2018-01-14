@@ -3,7 +3,13 @@
     {% include "header.html" %}
   </head>
     <body>
-jag vet inte hur man gör
+    <div>
+        {% if words %}
+            {{ words }}
+        {% else %}
+        skiten kaninte laddas :(((())))
+        {% endif %}
+    </div>
     </body>
     <footer>
         {% include "footer.html" %}
