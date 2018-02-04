@@ -8,8 +8,9 @@
         <table>
             {% for c in categoryList %}
             <tr>
-                <td>{{ c.name }}</td><td> INSERT COOL CCSS</td>
+                <td><a href="/forum/{{c.id}}">{{ c.name }}</a></td><td> INSERT COOL CCSS</td>
             </tr>
+            
             {% endfor %}
         </table>
         {% else %}
